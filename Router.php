@@ -28,6 +28,8 @@ class Router
 
         $currentUrl = strtok($_SERVER["REQUEST_URI"], '?') ?? '/';
 
+        // $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
+
         $method = $_SERVER['REQUEST_METHOD'];
 
         if(in_array($currentUrl, $rutas_protegidas) && !$auth) {
