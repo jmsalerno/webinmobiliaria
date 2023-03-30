@@ -1,7 +1,7 @@
 node_modules/
 src/
 vendor/
-gulpfiles.js
+gulpfile.js
 package.json
 package-lock.json
 .env
