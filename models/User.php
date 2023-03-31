@@ -66,7 +66,7 @@ class User extends ActiveRecord {
 
     public function autenticar() {
 
-        session_start();
+        //session_start();
 
         $_SESSION['usuario'] = $this->email;
 
