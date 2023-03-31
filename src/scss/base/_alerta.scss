@@ -1,0 +1,19 @@
+.alerta {
+    
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+
+    &.error {
+        background-color: #FF5733;
+    }
+
+    &.exito {
+        background-color: green;
+    }
+}

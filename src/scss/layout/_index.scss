@@ -1,0 +1,185 @@
+main {
+
+    min-height: calc(100vh - 20rem);
+
+    @include desktop {
+
+        min-height: 50rem;
+    }
+}
+
+main .image-container {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/home.webp");    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 260px;
+    width: 100%;
+
+    @include desktop {
+
+        height: 500px;
+    }
+}
+
+main .first-section-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .first-section-container h1 {
+
+    color: azure;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .first-section-container .search {
+
+
+    margin-top: 2rem;
+    height: 4rem;
+    
+
+}
+
+main .first-section-container .search form {
+
+    position: relative;
+    
+
+
+}
+
+main .first-section-container .search form input {
+
+    padding: 0 20px;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    padding-left: 50px;
+
+    @include tablet {
+
+        width: 600px;
+    }
+    
+}
+
+main .first-section-container .search form button {
+
+    border: none;
+    position: absolute;
+    width: 4rem;
+    height: 3.5rem;
+    background-color: #007aff;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+}
+
+main .first-section-container .search form button i {
+
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    color: #e8e8e8;
+}
+
+
+
+main .second-section-container{
+
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .second-section-container h2 {
+
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+main .second-section-container .cards-container {
+
+    display: grid;
+    gap: 4rem;
+
+    @include tablet {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        width: 73rem;
+        justify-content: center;
+    }
+}
+
+main .second-section-container .cards-container .card-container {
+
+    height: auto;
+    width: 22rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+main .second-section-container .cards-container .card-container img {
+
+    width: 100%;
+    border-radius: 5px;
+}
+
+main .second-section-container .cards-container .card-container .title {
+
+    font-weight: bold;
+}
+
+main .second-section-container .cards-container .card-container .price {
+
+    font-weight: bold;
+    color: green;
+}
+
+main .second-section-container .cards-container .card-container button {
+
+    
+    background-color: #007aff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .second-section-container .cards-container .card-container button a {
+    
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+

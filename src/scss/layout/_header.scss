@@ -1,0 +1,132 @@
+
+header {
+    
+    
+    min-height: 2.5rem;
+}    
+    
+
+header .header-container{
+
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop {
+
+        padding: 0 10rem;
+    }
+        
+}
+
+header .header-container .logo,
+header .header-container img {
+
+    width: 8rem;
+
+    @include desktop {
+
+        width: 12rem;
+    }
+}
+
+
+header .header-container .burger-m-container{
+
+    height: 4.5rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    
+    
+    @include tablet {
+
+        display: none;
+    }
+
+}
+
+header .header-container .burger-m-container .burger-m{
+
+    padding: 7px;
+    height: 100%;                
+}
+
+
+header .header-container .nav-list-container{
+    
+    display: none;
+
+    @include tablet {
+        display: flex;
+    }
+
+}
+
+@keyframes animacionMenu {
+
+
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+header .header-container .activate {
+
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 100%;
+    animation: animacionMenu 350ms ease-in-out both;
+
+    @include tablet {
+
+        flex: 0;
+        flex-flow: row;
+    }
+
+}
+
+
+            
+
+header .header-container .activate .nav-list, 
+header .header-container .nav-list-container .nav-list {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+
+    @include tablet {
+
+        flex-direction: row;
+    }
+    
+    li {
+
+        padding: 0.6rem 2rem;
+
+        a {
+
+            text-decoration: none;
+            color: #7e7e7e;  
+            font-size: 1.8rem;
+        }
+
+        a:hover {
+
+            color: black;
+        }
+    }
+}
+
+
+
+
+
+        
+
+

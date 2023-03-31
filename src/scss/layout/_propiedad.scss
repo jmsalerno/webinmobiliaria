@@ -1,0 +1,31 @@
+main .props-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+    
+
+    @include desktop {
+
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+main .props-container img {
+
+    
+    @include desktop {
+
+        height: 35rem;
+        width: 50rem;
+        align-self: center;
+    }
+}
+
+main .props-container .props-price {
+
+    font-weight: bold;
+    color: green;
+}
