@@ -49,7 +49,7 @@ class LoginController {
 
     public static function logout() {
 
-        session_start();
+        // session_start();
 
         $_SESSION = [];
         
